@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"lk_bootloader\startup_stm32f103xe.o"
+"lk_bootloader\main.o"
+"lk_bootloader\stm32f1xx_it.o"
+"lk_bootloader\stm32f1xx_hal_msp.o"
+"lk_bootloader\stm32f1xx_hal_gpio_ex.o"
+"lk_bootloader\stm32f1xx_hal_tim.o"
+"lk_bootloader\stm32f1xx_hal_tim_ex.o"
+"lk_bootloader\stm32f1xx_hal_uart.o"
+"lk_bootloader\stm32f1xx_hal.o"
+"lk_bootloader\stm32f1xx_hal_rcc.o"
+"lk_bootloader\stm32f1xx_hal_rcc_ex.o"
+"lk_bootloader\stm32f1xx_hal_gpio.o"
+"lk_bootloader\stm32f1xx_hal_dma.o"
+"lk_bootloader\stm32f1xx_hal_cortex.o"
+"lk_bootloader\stm32f1xx_hal_pwr.o"
+"lk_bootloader\stm32f1xx_hal_flash.o"
+"lk_bootloader\stm32f1xx_hal_flash_ex.o"
+"lk_bootloader\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "lk_bootloader\lk_bootloader.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lk_bootloader.map" -o lk_bootloader\lk_bootloader.axf
