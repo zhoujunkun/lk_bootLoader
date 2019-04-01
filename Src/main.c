@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "menu.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -188,7 +188,13 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void lk_bootLoaderInit(void)
+{
+    /* Initialise Flash */
+  	FLASH_If_Init();
 
+
+}
 /* USER CODE END 4 */
 
 /**
